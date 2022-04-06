@@ -1,2 +1,2 @@
 # nvim
-My neovim configuration.
+My neovim configuration. (May break)
