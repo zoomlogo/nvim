@@ -23,6 +23,8 @@ nmap("<leader>p", ":tabnext<CR>")
 nmap("<leader>h", ":vsplit<CR>")
 nmap("<leader>v", ":split<CR>")
 nmap("<leader>cd", ":cd %/..<CR>")
+nmap("<c-o>", "o<esc>k")
+nmap("<m-w>", "viw")
 
 -- lsp
 nmap("<F2>", ":lua vim.lsp.diagnostic.goto_next()<CR>")

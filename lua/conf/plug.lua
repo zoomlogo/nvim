@@ -42,7 +42,6 @@ return require("packer").startup(function(use)
     -- lsp
     use "neovim/nvim-lspconfig"
     use "williamboman/nvim-lsp-installer"
-    use "nvim-treesitter/nvim-treesitter"
     use {
         "hrsh7th/nvim-cmp", requires = {
             "hrsh7th/cmp-vsnip",
@@ -52,6 +51,10 @@ return require("packer").startup(function(use)
             "hrsh7th/cmp-path",
         }
     }
+
+    -- treesitter
+    use "nvim-treesitter/nvim-treesitter"
+    use "p00f/nvim-ts-rainbow"
 
     -- telescope
     use "nvim-telescope/telescope.nvim"

@@ -31,8 +31,9 @@ vim.o.autoread = true
 vim.o.termguicolors = true
 vim.o.scrolloff = 1
 
-vim.o.laststatus = 3
+vim.o.laststatus = 2  -- todo: set to 3 in nvim 0.7
 vim.o.showcmd = true
 vim.o.showmode = false
 vim.o.shortmess = "filnxtToOFc"
 
+vim.o.tildeop = true  -- ~ is now an operator
