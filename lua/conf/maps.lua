@@ -24,6 +24,7 @@ nmap("<leader>h", ":vsplit<CR>")
 nmap("<leader>v", ":split<CR>")
 nmap("<leader>cd", ":cd %/..<CR>")
 nmap("<c-o>", "o<esc>k")
+nmap("<c-O>", "O<esc>j")
 nmap("<m-w>", "viw")
 
 -- lsp

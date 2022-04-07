@@ -34,16 +34,3 @@ require("nvim-lsp-installer").on_server_ready(function(server)
     local opts = { capabilities = capabilities }
     server:setup(opts)
 end)
-require("nvim-treesitter.configs").setup({
-    ensure_installed = { "python", "c", "cpp", "javascript" },
-    highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false, 
-    },
-    indent = {
-        enable = true,
-    },
-    rainbow = {
-        enable = true,
-    },
-})

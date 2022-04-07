@@ -30,6 +30,7 @@ return require("packer").startup(function(use)
     use "PyGamer0/colorscheme_changer.vim"
     use "rcarriga/nvim-notify"
     use "NTBBloodbath/galaxyline.nvim"
+    use "junegunn/rainbow_parentheses.vim"
 
     -- colors
     use "rktjmp/lush.nvim"
@@ -51,10 +52,6 @@ return require("packer").startup(function(use)
             "hrsh7th/cmp-path",
         }
     }
-
-    -- treesitter
-    use "nvim-treesitter/nvim-treesitter"
-    use "p00f/nvim-ts-rainbow"
 
     -- telescope
     use "nvim-telescope/telescope.nvim"
