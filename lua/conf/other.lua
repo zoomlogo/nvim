@@ -1,5 +1,5 @@
 -- other: configuration for other plugins
-require("one_monokai").setup()
+vim.cmd("colorscheme defined")
 vim.g.terminal_shell = "zsh"
 vim.g.indentLine_char = "▏"
 vim.g.font_changer_fonts = {
@@ -8,8 +8,8 @@ vim.g.font_changer_fonts = {
     "agave_NF_r:h13",
 }
 vim.g.colorscheme_changer_colors = {
-    "one_monokai",
     "defined",
+    "one_monokai",
     "cemant",
 }
 require("notify").setup({
