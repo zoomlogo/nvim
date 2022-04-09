@@ -30,7 +30,9 @@ return require("packer").startup(function(use)
     use "PyGamer0/colorscheme_changer.vim"
     use "rcarriga/nvim-notify"
     use "NTBBloodbath/galaxyline.nvim"
-    use "junegunn/rainbow_parentheses.vim"
+    use "PyGamer0/rainbow_parentheses.vim"
+    use "tpope/vim-commentary"
+    use "jbgutierrez/vim-better-comments"
 
     -- colors
     use "rktjmp/lush.nvim"
