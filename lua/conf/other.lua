@@ -12,6 +12,7 @@ vim.g.colorscheme_changer_colors = {
     "one_monokai",
     "cemant",
 }
+vim.cmd("let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]")
 require("notify").setup({
     stages = "slide",
     icons = {
