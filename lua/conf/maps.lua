@@ -28,8 +28,8 @@ nmap("<c-O>", "O<esc>j")
 nmap("<m-w>", "viw")
 
 -- lsp
-nmap("<F2>", ":lua vim.lsp.diagnostic.goto_next()<CR>")
-nmap("<F3>", ":lua vim.lsp.diagnostic.goto_prev()<CR>")
+nmap("<F2>", ":lua vim.diagnostic.goto_next()<CR>")
+nmap("<F3>", ":lua vim.diagnostic.goto_prev()<CR>")
 nmap("gD", ":lua vim.lsp.buf.declaration()<CR>")
 nmap("gd", ":lua vim.lsp.buf.definition()<CR>")
 nmap("K", ":lua vim.lsp.buf.hover()<CR>")
