@@ -9,6 +9,7 @@ vim.g.font_changer_fonts = {
 }
 vim.g.colorscheme_changer_colors = {
     "defined",
+    "jellybeans-nvim",
     "cemant",
 }
 vim.cmd("let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]")
