@@ -41,6 +41,9 @@ nmap("<leader>fg", ":Telescope live_grep<CR>")
 -- mru
 nmap("<leader>m", ":MRU<CR>")
 
+-- vim-easy-align
+nmap("ga", "<Plug>(EasyAlign)")
+
 -- mine
 nmap("<leader>cf", ":ChangeFont<CR>")
 nmap("<leader>cc", ":ChangeColor<CR>")
