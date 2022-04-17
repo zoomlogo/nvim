@@ -30,7 +30,7 @@ return require("packer").startup(function(use)
     use { "PyGamer0/font_changer.vim", cmd = { "ChangeFont" } }
     use { "PyGamer0/colorscheme_changer.vim", cmd = { "ChangeColor" } }
     use "rcarriga/nvim-notify"
-    use "NTBBloodbath/galaxyline.nvim"
+    use { "NTBBloodbath/galaxyline.nvim", module = "galaxyline" }
 
     -- colors
     use "rktjmp/lush.nvim"
@@ -42,7 +42,7 @@ return require("packer").startup(function(use)
 
     -- lsp
     use "neovim/nvim-lspconfig"
-    use "williamboman/nvim-lsp-installer"
+    use { "williamboman/nvim-lsp-installer", cmd = { "LspInstall" } }
     use {
         "hrsh7th/nvim-cmp", requires = {
             "hrsh7th/cmp-vsnip",
