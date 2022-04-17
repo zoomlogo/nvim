@@ -1,7 +1,9 @@
+vim.cmd [[ packadd packer.vim ]]
+
 -- plug: plugins
 return require("packer").startup(function(use)
     -- manage self
-    use "wbthomason/packer.nvim"
+    use { "wbthomason/packer.nvim", opt = true }
 
     -- impatient
     use "lewis6991/impatient.nvim"
@@ -11,8 +13,8 @@ return require("packer").startup(function(use)
     use "airblade/vim-rooter"
     use "Kethku/golden-ratio"
     use "mg979/vim-visual-multi"
-    use "PyGamer0/vim-apl"
-    use "skywind3000/vim-terminal-help"
+    use { "PyGamer0/vim-apl", ft = "apl" },
+    use { "skywind3000/vim-terminal-help", keys = { { "n", "<m-=>" } } }
     use "tpope/vim-abolish"
     use "tpope/vim-surround"
     use "lewis6991/gitsigns.nvim"
@@ -20,7 +22,7 @@ return require("packer").startup(function(use)
     use "winston0410/range-highlight.nvim"
     use { "psf/black", cmd = { "Black" } }
     use { "https://codeberg.org/ngn/k", rtp = "./vim_k" }
-    use "junegunn/vim-easy-align"
+    use { "junegunn/vim-easy-align", keys = "<Plug>(EasyAlign)" }
     use "folke/which-key.nvim"
     use "tpope/vim-commentary"
 
@@ -38,7 +40,7 @@ return require("packer").startup(function(use)
     use "metalelf0/jellybeans-nvim"
 
     -- required by some plugins
-    use { "nvim-lua/plenary.nvim", opt = true }
+    use { "nvim-lua/plenary.nvim", module = "plenary" }
 
     -- lsp
     use "neovim/nvim-lspconfig"
@@ -54,6 +56,13 @@ return require("packer").startup(function(use)
     }
 
     -- telescope
-    use "nvim-telescope/telescope.nvim"
-    use "nvim-telescope/telescope-frecency.nvim"
+    use {
+        "nvim-telescope/telescope.nvim",
+        module = "telescope",
+        keys = { 
+            { "n", "<leader>ff" },
+            { "n", "<leader>fg" },
+        }
+    }
+    use { "nvim-telescope/telescope-frecency.nvim", opt = true }
 end)
