@@ -9,7 +9,6 @@ vim.g.font_changer_fonts = {
 }
 vim.g.colorscheme_changer_colors = {
     "defined",
-    "one_monokai",
     "cemant",
 }
 vim.cmd("let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]")
