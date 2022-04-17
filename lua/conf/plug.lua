@@ -1,7 +1,7 @@
 -- plug: plugins
 return require("packer").startup(function(use)
     -- manage self
-    use { "wbthomason/packer.nvim", cmd = { "PackerSync" } }
+    use "wbthomason/packer.nvim"
 
     -- impatient
     use "lewis6991/impatient.nvim"
@@ -35,6 +35,7 @@ return require("packer").startup(function(use)
     -- colors
     use "rktjmp/lush.nvim"
     use "PyGamer0/defined.nvim"
+    use "metalelf0/jellybeans-nvim"
 
     -- required by some plugins
     use { "nvim-lua/plenary.nvim", opt = true }
