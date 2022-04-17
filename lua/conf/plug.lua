@@ -1,9 +1,7 @@
-vim.cmd [[ packadd packer.vim ]]
-
 -- plug: plugins
 return require("packer").startup(function(use)
     -- manage self
-    use { "wbthomason/packer.nvim", opt = true }
+    use "wbthomason/packer.nvim"
 
     -- impatient
     use "lewis6991/impatient.nvim"
