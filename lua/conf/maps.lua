@@ -23,8 +23,6 @@ nmap("<leader>p", ":tabnext<CR>")
 nmap("<leader>h", ":vsplit<CR>")
 nmap("<leader>v", ":split<CR>")
 nmap("<leader>cd", ":cd %/..<CR>")
-nmap("<c-o>", "o<esc>k")
-nmap("<c-O>", "O<esc>j")
 nmap("<m-w>", "viw")
 
 -- lsp
@@ -34,7 +32,7 @@ nmap("gD", ":lua vim.lsp.buf.declaration()<CR>")
 nmap("gd", ":lua vim.lsp.buf.definition()<CR>")
 nmap("K", ":lua vim.lsp.buf.hover()<CR>")
 nmap("gr", ":lua vim.lsp.buf.references()<CR>")
-nmap("<c-r>", ":lua vim.lsp.buf.rename()<CR>")
+nmap("<leader>r", ":lua vim.lsp.buf.rename()<CR>")
 
 -- telescope.nvim
 nmap("<leader>ff", ":Telescope find_files<CR>")
