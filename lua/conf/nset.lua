@@ -12,6 +12,7 @@ vim.o.relativenumber = true
 
 -- on file specific
 vim.cmd("filetype plugin indent on")
+vim.cmd("syntax on")
 
 -- others
 vim.o.encoding = "utf-8"
