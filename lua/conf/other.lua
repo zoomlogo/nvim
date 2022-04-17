@@ -4,7 +4,7 @@ vim.g.terminal_shell = "zsh"
 vim.g.indentLine_char = "▏"
 vim.g.font_changer_fonts = {
     "icfs,agave_NF_r:h13",
-    "Courier_Prime,agave_NF_r:h13",
+    "SF_Mono,agave_NF_r:h13",
     "agave_NF_r:h13",
 }
 vim.g.colorscheme_changer_colors = {
