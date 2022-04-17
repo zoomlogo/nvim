@@ -30,7 +30,7 @@ return require("packer").startup(function(use)
     use { "PyGamer0/font_changer.vim", cmd = { "ChangeFont" } }
     use { "PyGamer0/colorscheme_changer.vim", cmd = { "ChangeColor" } }
     use "rcarriga/nvim-notify"
-    use { "NTBBloodbath/galaxyline.nvim", module = "galaxyline" }
+    use "NTBBloodbath/galaxyline.nvim"
 
     -- colors
     use "rktjmp/lush.nvim"
