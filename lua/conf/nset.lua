@@ -21,7 +21,6 @@ vim.o.completeopt = "menuone,noselect"
 vim.o.signcolumn = "yes"
 vim.o.hlsearch = false
 vim.o.showtabline = 2
-vim.o.clipboard = "unnamedplus"
 
 vim.o.swapfile = false
 vim.o.backup = false
