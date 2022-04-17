@@ -12,7 +12,7 @@ return require("packer").startup(function(use)
     use "Kethku/golden-ratio"
     use "mg979/vim-visual-multi"
     use { "PyGamer0/vim-apl", ft = "apl" }
-    use { "skywind3000/vim-terminal-help", keys = { { "n", "<m-=>" } } }
+    use "skywind3000/vim-terminal-help"
     use "tpope/vim-abolish"
     use "tpope/vim-surround"
     use "lewis6991/gitsigns.nvim"
@@ -54,13 +54,6 @@ return require("packer").startup(function(use)
     }
 
     -- telescope
-    use {
-        "nvim-telescope/telescope.nvim",
-        module = "telescope",
-        keys = { 
-            { "n", "<leader>ff" },
-            { "n", "<leader>fg" },
-        }
-    }
+    use { "nvim-telescope/telescope.nvim", module = "telescope", cmd = { "Telescope" } }
     use { "nvim-telescope/telescope-frecency.nvim", opt = true }
 end)
