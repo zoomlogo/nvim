@@ -1,13 +1,13 @@
 -- plug: plugins
 return require("packer").startup(function(use)
     -- manage self
-    use "wbthomason/packer.nvim"
+    use { "wbthomason/packer.nvim", cmd = { "PackerSync" } }
 
     -- impatient
     use "lewis6991/impatient.nvim"
 
     -- helpful
-    use "yegappan/mru"
+    use { "yegappan/mru", cmd = { "MRU" } }
     use "airblade/vim-rooter"
     use "Kethku/golden-ratio"
     use "mg979/vim-visual-multi"
@@ -18,28 +18,26 @@ return require("packer").startup(function(use)
     use "lewis6991/gitsigns.nvim"
     use "tversteeg/registers.nvim"
     use "winston0410/range-highlight.nvim"
-    use "psf/black"
-    use { "https://codeberg.org/ngn/k", as = "vim_k", rtp = "vim_k" }
+    use { "psf/black", cmd = { "Black" } }
+    use { "https://codeberg.org/ngn/k", rtp = "./vim_k" }
     use "junegunn/vim-easy-align"
     use "folke/which-key.nvim"
+    use "tpope/vim-commentary"
 
     -- looks
     use "norcalli/nvim-colorizer.lua"
     use "Yggdroot/indentLine"
-    use "PyGamer0/font_changer.vim"
-    use "PyGamer0/colorscheme_changer.vim"
+    use { "PyGamer0/font_changer.vim", cmd = { "ChangeFont" } }
+    use { "PyGamer0/colorscheme_changer.vim", cmd = { "ChangeColor" } }
     use "rcarriga/nvim-notify"
     use "NTBBloodbath/galaxyline.nvim"
-    use "PyGamer0/rainbow_parentheses.vim"
-    use "tpope/vim-commentary"
 
     -- colors
     use "rktjmp/lush.nvim"
     use "PyGamer0/defined.nvim"
-    use "cpea2506/one_monokai.nvim"
 
     -- required by some plugins
-    use "nvim-lua/plenary.nvim"
+    use { "nvim-lua/plenary.nvim", opt = true }
 
     -- lsp
     use "neovim/nvim-lspconfig"
