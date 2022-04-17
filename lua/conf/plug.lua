@@ -13,7 +13,7 @@ return require("packer").startup(function(use)
     use "airblade/vim-rooter"
     use "Kethku/golden-ratio"
     use "mg979/vim-visual-multi"
-    use { "PyGamer0/vim-apl", ft = "apl" },
+    use { "PyGamer0/vim-apl", ft = "apl" }
     use { "skywind3000/vim-terminal-help", keys = { { "n", "<m-=>" } } }
     use "tpope/vim-abolish"
     use "tpope/vim-surround"
