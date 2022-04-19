@@ -10,7 +10,7 @@ return require("packer").startup(function(use)
     use { "yegappan/mru", cmd = { "MRU" } }
     use "airblade/vim-rooter"
     use "Kethku/golden-ratio"
-    use "mg979/vim-visual-multi"
+    use { "mg979/vim-visual-multi", event = "BufEnter" }
     use { "PyGamer0/vim-apl", ft = "apl" }
     use "skywind3000/vim-terminal-help"
     use "tpope/vim-abolish"
