@@ -34,7 +34,7 @@ return require("packer").startup(function(use)
 
     -- colors
     use "rktjmp/lush.nvim"
-    use "PyGamer0/defined.nvim"
+    use "PyGamer0/defun.vim"
     use "metalelf0/jellybeans-nvim"
 
     -- required by some plugins
