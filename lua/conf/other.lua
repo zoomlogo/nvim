@@ -1,5 +1,5 @@
 -- other: configuration for other plugins
-vim.cmd("colorscheme defined")
+vim.cmd("colorscheme defun")
 vim.g.terminal_shell = "zsh"
 vim.g.indentLine_char = "▏"
 vim.g.font_changer_fonts = {
