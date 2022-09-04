@@ -1,5 +1,5 @@
 -- nset: neovim settings
-vim.o.guifont = "icfs,agave_NF_r:h13"  -- for guis
+vim.o.guifont = "sevka,agave_NF_r:h13"  -- for guis
 
 -- tabs to spaces
 vim.o.expandtab = true
