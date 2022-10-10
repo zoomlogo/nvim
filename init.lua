@@ -1,4 +1,18 @@
-vim.cmd("source ~/.vimrc")
+vim.cmd([[
+ source ~/.vimrc
+ se scl=yes ls=3
+ nm <f1> <cmd>lua vim.diagnostic.goto_next()<cr>
+ nm <f2> <cmd>lua vim.diagnostic.goto_prev()<cr>
+ nm gD <cmd>lua vim.lsp.buf.declaration()<cr>
+ nm gd <cmd>lua vim.lsp.buf.definition()<cr>
+ nm K <cmd>lua vim.lsp.buf.hover()<cr>
+ nm gr <cmd>lua vim.lsp.buf.references()<cr>
+ nm <leader>r <cmd>lua vim.lsp.buf.rename()<cr>
+ nm <leader>ff <cmd>Telescope find_files<cr>
+ nm <leader>fg <cmd>Telescope live_grep<cr>
+ nm <leader>m <cmd>MRU<cr>
+ au textyankpost * lua vim.highlight.on_yank{higroup="IncSearch", timeout=150, on_visual=true}
+]])
 local impatient_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/impatient.nvim'
 if vim.fn.empty(vim.fn.glob(impatient_path)) > 0 then
     print("impatient.nvim not found! Cloning into", impatient_path)
