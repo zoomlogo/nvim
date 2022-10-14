@@ -40,6 +40,7 @@ require("packer").startup(function(use)    -- manage self
     use "folke/which-key.nvim"
     use "tpope/vim-commentary"
     use "norcalli/nvim-colorizer.lua"
+    use "savq/melange"
     use "Yggdroot/indentLine"
     use "rcarriga/nvim-notify"
     use "NTBBloodbath/galaxyline.nvim"
